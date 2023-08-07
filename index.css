@@ -1,0 +1,47 @@
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+.container {
+  width: 80vw;
+  margin-left: 10vw;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.box {
+  width: 22%;
+  height: 45%;
+}
+#nano {
+  background-color: blue;
+  color: white;
+}
+#nacho {
+  background-color: purple;
+}
+#eze {
+  background-color: black;
+}
+#santi {
+  background-color: orange;
+}
+#zoe {
+  background-color: palevioletred;
+}
+#quito {
+  background-color: #42ACFA;
+}
+
+body {
+  background-color: violet;
+}
+a {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,92 @@
+#back{
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+}
+body {
+    background-color: black;
+  }
+  #spinner {
+    perspective: 500px;
+    z-index: 9;
+    font-weight: 900;
+    font-size: 100px;
+    color: greenyellow;
+    position: absolute;
+    text-align: center;
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+  @keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  #spinner2 {
+    z-index: 9;
+    font-weight: 900;
+    font-size: 100px;
+    color: greenyellow;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    animation-name: spin2, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    max-height: 100vh;
+    max-width: 100vw;
+  }
+  @keyframes spin2 {
+    from {
+      transform: rotateY(-360deg);
+    }
+    to {
+      transform: rotateY(0deg);
+    }
+  }
+  #img {
+    height: 400px;
+    width: 900px;
+  }
+  #pot {
+    z-index: 99;
+    /* height: 150px;
+    width: 180px; */
+    bottom: 15%;
+    /* top: 0; */
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+  }
+  @-webkit-keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: calc(100% - 900px);
+    }
+    100% {
+      left: 0;
+    }
+  }
+  #pot > #spinner {
+    width: 900px;
+  }
+  
+  #firma {
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: cadetblue;
+  }
+  
